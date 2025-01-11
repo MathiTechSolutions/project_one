@@ -1,6 +1,3 @@
-// JavaScript for handling dynamic features, if needed
-
-
 // Get elements
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -71,10 +68,79 @@ function sendemail(){
      console.log('SUCCESS!', response.status, response.text);
      window.alert("Sent successfully!");
      
-  })
-  
-     
+  })  
   }
-        
+    
 
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+// Observe all animated elements in the competencies section
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.fade-up');
+  animatedElements.forEach(el => observer.observe(el));
+});
+
+// Function to handle scroll animation triggering
+function handleScrollAnimation() {
+  const elements = document.querySelectorAll('.fade-up'); // Select all elements with the fade-up class
+
+  elements.forEach(element => {
+    const rect = element.getBoundingClientRect(); // Get the element's position relative to the viewport
+    const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight; // Check if the element is within the viewport
+
+    if (isVisible && !element.classList.contains('animate-in')) {
+      element.classList.add('animate-in'); // Add the animate-in class to trigger the animation
+    }
+  });
+}
+
+// Call the handleScrollAnimation function on scroll and load events
+window.addEventListener('scroll', handleScrollAnimation);
+window.addEventListener('load', handleScrollAnimation);
+
+// Run once to handle initial loading
+handleScrollAnimation();
+
+
+
+function showSection(section) {
+  // Hide all sections
+  document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
   
+  // Show the clicked section
+  document.getElementById(section).style.display = 'block';
+
+  // Update button active state
+  document.querySelectorAll('.tab-button').forEach(button => {
+      button.classList.remove('active');
+  });
+  document.getElementById(section + '-btn').classList.add('active');
+}
+
+// Initialize default visible section (Internships)
+document.addEventListener('DOMContentLoaded', () => {
+  showSection('internships');
+});
+
+
+
+
+
+
+
+
+
+
+
+
