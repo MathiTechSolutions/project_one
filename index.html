@@ -28,7 +28,10 @@
     <ul class="hidden md:flex space-x-6">
       <li><a href="#about" class="hover:text-yellow-300 text-white">About</a></li>
       <li><a href="#projects" class="hover:text-yellow-300 text-white">Projects</a></li>
+      <li><a href="#Competencies" class="hover:text-yellow-300 text-white">Competencies</a></li>
       <li><a href="#contact" class="hover:text-yellow-300 text-white">Contact</a></li>
+     
+      
     </ul>
 
     <!-- Mobile Hamburger Icon -->
@@ -48,7 +51,9 @@
     <ul class="flex flex-col space-y-4 p-4">
       <li><a href="#about" class="hover:text-yellow-300">About</a></li>
       <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+      <li><a href="#Competencies" class="hover:text-yellow-300">Competencies</a></li>
       <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      
     </ul>
   </div>
 </header>
@@ -82,7 +87,7 @@
     <h3 class="text-3xl font-bold text-center mb-8">About Me</h3>
     <div class="flex flex-col md:flex-row items-center md:space-x-10">
       <img src="images/KOWSHIKA.jpg" alt="Your Picture" class="rounded-full w-48 h-48 mb-6 md:mb-0 animate-jump-out animate-infinite animate-duration-[2000ms] animate-delay-[2000ms] animate-ease-in-out">
-      <p class="text-lg leading-relaxed animate-fade-left animate-once">
+      <p class="text-lg leading-relaxed animate-fade-left animate-once text-justify">
         I am Kowshika Murugan, a graduate in Electronics and Communication Engineering with a strong passion for technology and innovation. My journey has been fueled by a commitment to solving real-world problems, exemplified by projects such as the Autonomous Toilet Cleaning Robot and the Drowsiness Detection System. Through internships at Zepto, JRR Safelogic, and Pantech, I gained hands-on experience in AI, data analytics, and tools like Python, UX design, and Figma. As Secretary of the Rotaract Club, I led community initiatives and empowered peers. Recognized with the Best Student Award for excellence in co-curricular and extracurricular activities, I am certified in Machine Learning and IT Essentials. Dedicated to continuous learning, I strive to make a significant impact in the tech industry.
     </p>    
     </div>
@@ -175,12 +180,183 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container mx-auto py-16 px-4">
-    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
-    
 
-    <form action="#" class="max-w-xl mx-auto bg-white shadow p-6 rounded">
+<!-- Competencies Section -->
+<section id="Competencies" class="competencies section features">
+  <br></br>
+  <h3 class="text-3xl font-bold text-center mb-8">Competencies</h3>
+  <div class="cards-container">
+    <div class="card fade-up" style="--delay: 0s">
+     <b><h3>Educational Qualifications</h3></b>
+     <p class="spaced-column">Knowledge Institute of Technology, Bachelor of ECE - 8.42 CGPA</p>
+     <p class="spaced-column">Vani Vidyalaya Matric Hr. Sec. School, HSC - 63.50%</p>
+     <p class="spaced-column">Vani Vidyalaya Matric Hr. Sec. School, SSLC - 92.20%</p>
+    </div>
+    <div class="card fade-up" style="--delay: 0.2s">
+      <b><h3>Professional Skills</h3></b>
+      <p class="spaced-column">Python, Java, C</p>
+      <p class="spaced-column">Artificial Intelligence</p>
+      <p class="spaced-column">Cloud Essentials</p>
+      <p class="spaced-column">Data Analytics</p>
+      <p class="spaced-column">UX Desigh</p>
+    </div>
+    <div class="card fade-up" style="--delay: 0.4s">
+      <b><h3>Familiar Tools</h3></b>
+      <p class="spaced-column">PowerBI, Tableu</p>
+      <p class="spaced-column">MS Excel</p>
+      <p class="spaced-column">Github</p>
+      <p class="spaced-column">Figma</p>
+      <p class="spaced-column">Canva</p>
+      
+    </div>
+    <!-- New card added -->
+    <div class="card fade-up" style="--delay: 0.6s">
+      <b><h3>Ancillary Skills</h3></b>
+      <p class="spaced-column">Effective Communication</p>
+      <p class="spaced-column">Inspirational Leadership</p>
+      <p class="spaced-column">Adaptability to Evolving Challenges</p>
+      <p class="spaced-column">Innovative Problem-Solving</p>
+      <p class="spaced-column">Analytical Thinking</p>
+    </div>
+  </div>
+</section>
+<br></br>
+
+
+
+
+<main class="bg-purple-400 mx-auto p-6 space-y-16">
+  <!-- Tab Buttons -->
+  <div class="text-center mb-8">
+      <button id="internships-btn" class="tab-button active w-full sm:w-auto py-2 px-4 text-lg sm:text-base" onclick="showSection('internships')">Internships and experiences</button>
+      <button id="leadership-btn" class="tab-button w-full sm:w-auto py-2 px-4 text-lg sm:text-base" onclick="showSection('leadership')">Leadership and Activities</button>
+      <button id="certifications-btn" class="tab-button w-full sm:w-auto py-2 px-4 text-lg sm:text-base" onclick="showSection('certifications')">Certifications and Recognitions</button>
+  </div>
+
+
+  <!-- Internships -->
+  <section id="internships" class="tab-content visible">
+      <h2 class="text-3xl font-bold mb-8 text-center">Internships</h2>
+      <ul class="timeline">
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-xl font-semibold">Zepto</h3>
+                  <p>Role: Delivery Hub - Assistant (Trainee)</p>
+                  <p>Duration: 1 Month (October 2024)</p>
+                  <P class="text-justify">Contribution: During my 1-month internship at Zepto, I supported the logistics and delivery operations by coordinating with the delivery team, ensuring timely deliveries, and assisting with inventory management. This role gave me hands-on experience in managing delivery processes and logistics coordination in a fast-paced environment, while learning about the e-commerce sector's operational challenges.</P>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-xl font-semibold">JRR Safelogic Technologies and Services Pvt Ltd, Bengaluru</h3>
+                  <p>Role: Data Analytics Intern</p>
+                  <p>Duration: 2 Months (April 2024)</p>
+                  <p class="text-justify">Contribution: At JRR Safelogic Technologies, I worked as a Data Analytics Intern for two months, where I was involved in analyzing large datasets, extracting actionable insights, and presenting findings to improve business strategies. I used tools like Python, SQL, and Excel to process data and create visual reports, gaining valuable experience in data processing and visualization, and contributing to the company’s data-driven decision-making.</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-xl font-semibold">Pantech eLearning Pvt Ltd</h3>
+                  <p>Role: Artificial Intelligence Intern</p>
+                  <p>Duration: 2 Weeks (July 2023)</p>
+                  <p class="text-justify">Contribution: During my 2-week internship at Pantech eLearning, I focused on developing AI and machine learning models, assisting in research on AI applications, and experimenting with various algorithms to improve system efficiency. This experience provided a solid foundation in artificial intelligence, helping me understand the practical aspects of implementing AI in real-world applications.
+
+                  </p>
+              </div>
+          </li>
+      </ul>
+  </section>
+
+  <!-- Leadership and Activities -->
+  <section id="leadership" class="tab-content" style="display: none;">
+      <h2 class="text-3xl font-bold mb-8 text-center">Leadership and Activities</h2>
+      <ul class="timeline">
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-lg font-semibold">Rotaract Club</h3>
+                  <ul class="list-disc ml-6">
+                      <li>Secretary, Rotaract Club of Knowledge Institute of Technology (2022 - 2023)</li>
+                      <li>Women Empowerment Chair, District Rotaract Council, RID 2982 (2023 - 2024)</li>
+                      <li>Social Media Team Head, District Rotaract Organization, RID 2982 (2024 - 2025)</li>
+                  </ul>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-lg font-semibold">National Service Scheme (NSS)</h3>
+                  <p>Active member contributing to community service initiatives (2020-2024).</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <h3 class="text-lg font-semibold">IEEE Memberships</h3>
+                  <ul class="list-disc ml-6">
+                      <li>IEEE KIOT - Active Member</li>
+                      <li>IEEE YESISTS 2024 - Publicity Ambassador</li>
+                      <li>Ambassador roles in multiple IEEE initiatives (2023 - 2024)</li>
+                  </ul>
+              </div>
+          </li>
+      </ul>
+  </section>
+
+  <!-- Certifications and Recognitions -->
+  <section id="certifications" class="tab-content" style="display: none;">
+      <h2 class="text-3xl font-bold mb-8 text-center">Certifications and Recognitions</h2>
+      <ul class="timeline">
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>Best Student Award (Co-curricular Activities, Knowledge Institute of Technology, 2020 - 2024).</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>Achievers Award for IEEE participation (Knowledge Institute of Technology).</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>1st Prize in 'Paper Presentation' on Nano Sensors (Sona College of Technology, Salem).</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>1st Prize in 'Code Kaze' Contest (Coding Ninjas).</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>Presented research on 'Pill Camera' at NGP Institute of Technology, Coimbatore.</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>Completed the 'Machine Learning' course offered by Infosys Springboard.</p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="bg-purple-300 timeline-item-content fade-in">
+                  <p>Participated in National Conference on 'MRIET-2024' with Autonomous Toilet Cleaning Robot.</p>
+              </div>
+          </li>
+      </ul>
+  </section>
+</main>
+
+
+
+
+  
+  <!-- Contact Section -->
+<section id="contact" class="container mx-auto py-16 px-4 relative">
+  <!-- Background Image with Bright Overlay -->
+  <div class="absolute inset-0 bg-black opacity-20"></div> <!-- Overlay to brighten the background image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/git_one.jpg');"></div>
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <h3 class="text-3xl font-bold text-center mb-8 text-white">Contact Me</h3>
+    <form action="#" class="max-w-xl mx-auto bg-white shadow p-6 rounded opacity-80 hover:opacity-100 transition-opacity duration-500">
       <div class="mb-4">
         <label for="name" class="block text-sm font-bold mb-2">Name</label>
         <input type="text" id="name" class="w-full px-4 py-2 border rounded" placeholder="Your Name">
@@ -195,7 +371,9 @@
       </div>
       <button onclick="sendemail()" type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
     </form>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center py-4">
@@ -204,28 +382,30 @@
 
   <!-- Link to External JavaScript File -->
   <script src="script.js">
-    function sendemail(){
+    function sendemail()
+    {
 
-var email=document.getElementById("email").value;
-var name=document.getElementById("name").value;
-var from_name=document.getElementById("name").value;
-var message=document.getElementById("message").value;
+      var email=document.getElementById("email").value;
+      var name=document.getElementById("name").value;
+      var from_name=document.getElementById("name").value;
+      var message=document.getElementById("message").value;
 
-var templateParams = {
-  from_name : from_name,
+      var templateParams = {
+      from_name : from_name,
       email: email,
       name: name,
-  message: message
-    };
+      message: message
+      };
 
-    emailjs.send('service_1z4b6ld', 'template_8b6fcnl', templateParams)
-.then(function(response) {
-   console.log('SUCCESS!', response.status, response.text);
-   window.alert("Sent successfully!");
-   
-})  
-}
+      emailjs.send('service_1z4b6ld', 'template_8b6fcnl', templateParams)
+      .then(function(response)
+        {
+          console.log('SUCCESS!', response.status, response.text);
+          window.alert("Sent successfully!");
+        }
+      )  
+    }
       
-</script>
+  </script>
 </body>
 </html>
