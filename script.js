@@ -18,9 +18,18 @@ hamburger.addEventListener('click', () => {
     iconPath3.style.transform = 'rotate(0)';
   } else {
     // Open the menu - Change icon to 'X'
-    iconPath1.style.transform = 'rotate(45deg)';
-    iconPath2.style.opacity = '0';
-    iconPath3.style.transform = 'rotate(-45deg)';
+    // Open the menu - Change icon to 'X'
+iconPath1.style.transform = 'rotate(39deg)';
+iconPath1.style.transformOrigin = 'center'; // Ensure rotation happens from the center
+iconPath1.style.transition = 'transform 0.3s ease-in-out'; // Smooth transition for rotation
+
+iconPath2.style.opacity = '0';
+iconPath2.style.transition = 'opacity 0.3s ease-in-out'; // Smooth transition for fading
+
+iconPath3.style.transform = 'rotate(-39deg)';
+iconPath3.style.transformOrigin = 'center'; // Ensure rotation happens from the center
+iconPath3.style.transition = 'transform 0.3s ease-in-out'; // Smooth transition for rotation
+
   }
 });
 
@@ -66,7 +75,7 @@ function sendemail(){
       emailjs.send('service_1z4b6ld', 'template_8b6fcnl', templateParams)
   .then(function(response) {
      console.log('SUCCESS!', response.status, response.text);
-     window.alert("Sent successfully!");
+     window.alert("Message Sent successfully!");
      
   })  
   }
@@ -91,6 +100,16 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach(el => observer.observe(el));
 });
 
+
+
+
+
+
+
+
+
+
+
 // Function to handle scroll animation triggering
 function handleScrollAnimation() {
   const elements = document.querySelectorAll('.fade-up'); // Select all elements with the fade-up class
@@ -111,6 +130,15 @@ window.addEventListener('load', handleScrollAnimation);
 
 // Run once to handle initial loading
 handleScrollAnimation();
+
+
+
+
+
+
+
+
+
 
 
 
