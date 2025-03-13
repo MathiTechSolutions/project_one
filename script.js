@@ -72,7 +72,7 @@ function sendemail(){
     message: message
       };
   
-      emailjs.send('service_1z4b6ld', 'template_8b6fcnl', templateParams)
+      emailjs.send('service_ymx2u0s', 'template_crse832', templateParams)
   .then(function(response) {
      console.log('SUCCESS!', response.status, response.text);
      window.alert("Message Sent successfully!");
